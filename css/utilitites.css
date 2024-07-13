@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --grey: #c9c7d5; /* aslo use for span */
+  --blue:#3619db;
+  --pink: rgb(244, 94, 147);
+  --height: 40px;
+}
+
+body {
+  font-family: var(--font);
+  width: 1200px;
+  margin: 5px auto 5px auto;
+  padding: 30px;
+}
+
+.container {
+  /* width: 1200px; */
+  width: 100%;
+}
+
+ol li {
+  list-style-type: disc;
+}
+
+/* Navbar */
+.col-navbar {
+  line-height: 100px;
+}
+
+.navbar-img {
+  width: 260px;
+  height: 240px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid rgb(181, 177, 177);
+  border-radius: 50% 50% 50% 50%;
+  z-index: 1;
+}
+
+.row-navbar {
+  height: 100px;
+}
+
+/* Banner */
+.name, .position{
+  color: var(--pink);
+}
+
+/* Personal info */
+#card-text-1 {
+  display: none;
+}
+#errorEmail {
+  display: none;
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}
+.card-info-1 {
+  padding-left: 100px;
+  padding-right: 110px;
+}
+
+.card-info-2 {
+  padding-left: 130px;
+  padding-right: 100px;
+  background-color: rgb(237, 233, 233) !important;
+}
+
+.time {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.card-career {
+  width: 330px;
+  display: inline-block;
+}
+
+/* Button view */
+.view-more {
+  display: none;
+}
+
+.view {
+  width: 100px;
+  height: 50px;
+}
+
+/* Interest */
+.interest {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  border: 2px solid rgb(31, 161, 66);
+  border-radius: 50% 50% 50% 50%;
+}
+.col-interest {
+  font-size: 10px;
+}
+
+/* Skill */
+.span span {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  margin-right: 2px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+/* Line */
+.line {
+  display: inline-block;
+  height: 1px;
+}
+
+/* Certificate */
+.certi-span span {
+  display: inline-block;
+  width: 50px;
+  height: 0.5px;
+  margin-right: 2px;
+  border-radius: 2px 2px 2px 2px;
+  background-color: orange;
+}
+
+.col-certificate {
+  height: 180px;
+  border-color: orange !important;
+}
+
+.h6-certificate {
+  font-size: 14px;
+}
+
+.text {
+  display: none;
+}
+
+/* Project */
+.container .col-project {
+  width: 370px;
+}
+.container .col-project .name-project {
+  height: var(--height);
+  line-height: var(--height);
+  text-transform: uppercase;
+  border: 1px solid var(--grey);
+  padding-left: 10px;
+}
+
+.container .col-project .some-info .mini-element {
+  display: inline-block;
+}
+
+.container .col-project .some-info {
+  height: var(--height);
+  line-height: var(--height);
+  border: 1px solid var(--grey);
+  border-top: none;
+}
+
+.container .col-project .some-info .time {
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  background-color: var(--blue);
+  color: var(--red);
+  line-height: calc(var(--height) / 2);
+  border-radius: 5px;
+  -webkit-text-stroke: 2px var(--grey);
+}
+
+.container .col-project table {
+  border-bottom: 1px solid var(--grey);
+  border-top: none;
+  border-collapse: collapse;
+  height: 250px;
+}
+
+.container .col-project table th,
+td {
+  margin: 0;
+  padding: 5px 5px 5px 5px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--grey);
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  body {
+    width: 768px;
+    padding: 10px;
+  }
+
+  a {
+    font-size: 25px;
+  }
+
+  .card-info-1 {
+    padding: 0 10px 0 30px !important;
+  }
+
+  .card-info-2 {
+    padding: 0 30px 0 10px !important;
+  }
+
+  .col-certificate {
+    height: 300px;
+    border-color: orange !important;
+  }
+
+  .container .col-project {
+    width: 230px;
+  }
+
+  .container .col-project .table {
+    width: 100%;
+    height: 1000px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 360px;
+    padding: 10px;
+  }
+
+  .row-navbar {
+    width: 50%;
+    height: 500px;
+  }
+
+  .col-navbar {
+    border: none !important;
+    font-size: 20px;
+    line-height: 0;
+  }
+
+  .card-info-1 {
+    padding: 20px !important;
+  }
+
+  .card-info-2 {
+    padding: 0 !important;
+  }
+
+  .card-info-title {
+    font-size: 30px !important;
+  }
+
+  .card-info-text {
+    font-size: 20px;
+  }
+
+  .card-info-icon {
+    font-size: 25px;
+  }
+
+  .big-card {
+    height: 610px;
+  }
+
+  .col-certificate {
+    height: 300px;
+    border-right: none !important;
+    border-bottom: 0.5px solid orange !important;
+  }
+
+  .certi-span span {
+    display: none !important;
+  }
+
+  .container .col-project {
+    width: 320px;
+  }
+}

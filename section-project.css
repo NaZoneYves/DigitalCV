@@ -1,0 +1,27 @@
+.section-project {
+  /* use for name, some-info */
+  --height: 40px;
+}
+
+/* .section-project .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  width: 100%;
+  margin: 40px 0 40px 0;
+} */
+
+/* .section-project .container .element {
+  width: 360px;
+  height: 500px;
+} */
+
+/* .section-project .title {
+  margin: 0 0 30px 0;
+  font-size: 30px;
+  font-weight: bold;
+} */
+
+/* .section-project .container .element img {
+  width: 100%;
+} */
